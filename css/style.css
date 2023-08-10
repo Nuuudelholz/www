@@ -47,7 +47,13 @@ button {
 }
 
 .header__logo {
+    width: 250px;
+    height: 70px;
+}
+
+.logo__link {
     text-decoration: none;
+    display: block;
     width: 250px;
     height: 70px;
     background-image: url(../img/logo_white.png);
@@ -142,17 +148,12 @@ button {
 /* ==================INTRO================== */
 .intro {
     height: 950px;
-    /* background-color: #fff;
-    opacity: 0.5; */
 }
 
 /* ==================GALLERY================== */
 .gallery {
-    /* background-color: blue;
-    opacity: 0.5; */
     height: 900px;
     width: 100%;
-    /* margin-top: 100px; */
 }
 
 .gallery__content {
@@ -182,23 +183,31 @@ button {
     width: 1100px;
     padding: 15px 15px;
     backdrop-filter: blur(15px);
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
     box-shadow: 0 5px 50px black;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 15px;
     z-index: 20;
 }
 
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+
 .gallery__text {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     font-weight: 100;
+    text-align: center;
 }
 
 .gallery__photo {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     left: 0px;
     width: 120px;
     height: 120px;
@@ -209,27 +218,20 @@ button {
 }
 
 .goods {
-    padding: 0px 10px;
+    padding-right: 10px;
 }
 
 /* ==================BUTTONS================== */
 
 .buttons {
     position: absolute;
+    margin-top: 60px;
     height: 40px;
-    width: 1070px;
+    width: 1130px;
     display: flex;
     justify-content: space-between;
     z-index: 11;
 }
-
-/* .prev {
-    background-image: url(img/prev.png);
-}
-
-.next {
-    background-image: url(img/next.png);
-} */
 
 .next,
 .prev {
