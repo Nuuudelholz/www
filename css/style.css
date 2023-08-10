@@ -142,14 +142,14 @@ button {
 /* ==================INTRO================== */
 .intro {
     height: 950px;
-    background-color: #fff;
-    opacity: 0.5;
+    /* background-color: #fff;
+    opacity: 0.5; */
 }
 
 /* ==================GALLERY================== */
 .gallery {
-    background-color: blue;
-    opacity: 0.5;
+    /* background-color: blue;
+    opacity: 0.5; */
     height: 900px;
     width: 100%;
     /* margin-top: 100px; */
@@ -253,8 +253,8 @@ button {
 }
 
 .footer {
-    height: 100px;
     width: 100%;
-    background-color: red;
-    opacity: 0.5;
+    backdrop-filter: blur(15px);
+    /* background-color: red;
+    opacity: 0.5; */
 }
