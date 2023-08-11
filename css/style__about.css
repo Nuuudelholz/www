@@ -1,6 +1,6 @@
 body {
     margin: 0;
-
+    height: 1000px;
     font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 100;
@@ -155,31 +155,48 @@ button {
 .about__block {
     height: 700px;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
+.about__items {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+}
 
-.about {
+.about__right {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    width: 640px;
+    height: 490px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 50px black;
+    border-radius: 15px;
+}
+
+.about__map {
+    padding: 20px 20px;
+}
+
+.about__left {
    align-items: center;
    display: flex;
    flex-direction: column; 
-   width: 850px;
-   height: 600px;
+   width: 600px;
+   height: 450px;
    backdrop-filter: blur(15px);
-   margin-bottom: 100px;
    box-shadow: 0 5px 50px black;
    border-radius: 15px;
 }
 
-.about__content {
+.about__txt {
+    font-size: 18;
     padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 15px;
     font-weight: 100;
-    text-align: center;
     z-index: 30;
 }
 
