@@ -47,15 +47,15 @@ button {
 }
 
 .header__logo {
-    width: 250px;
-    height: 70px;
+    width: 237px;
+    height: 66px;
 }
 
 .logo__link {
     text-decoration: none;
     display: block;
-    width: 250px;
-    height: 70px;
+    width: 237px;
+    height: 66px;
     background-image: url(../img/logo_white.png);
 
     transition: all 0.2s linear;
