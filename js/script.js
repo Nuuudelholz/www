@@ -1,3 +1,4 @@
+
 let offset = 0;
 const sliderLine = document.querySelector('.gallery__photo');
 
