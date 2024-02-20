@@ -1,12 +1,14 @@
+
+
 body {
     margin: 0;
-
+    height: auto;
     font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 100;
     color: #ffffff;
 
-    background-image: url(../img/mgrd.jpg);
+    background-image: url(../img/rd.jpg);
     background-repeat: repeat;
     background-size: 100%;
 }
@@ -147,114 +149,64 @@ button {
 }
 /* ==================INTRO================== */
 .intro {
-    height: 950px;
+    height: 150px;
 }
 
-/* ==================GALLERY================== */
-.gallery {
-    height: 900px;
+/* ==================ORGS================== */
+
+.org__block {
+    height: 700px;
     width: 100%;
 }
 
-.gallery__content {
-    width: 1158px;
-    align-items: center;
+.org__items {
+    height: 600px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
 }
 
-.video__gallery {
-    width: 650px;
-    height: 400px;
+.org__right {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    width: 655px;
+    height: 500px;
     backdrop-filter: blur(15px);
-    margin-bottom: 30px;
     box-shadow: 0 5px 50px black;
     border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 150px;
+}
+
+.org__form {
+    padding: 15px 15px;
+}
+
+.org__left {
+   align-items: center;
+   display: flex;
+   flex-direction: column; 
+   width: 600px;
+   height: 450px;
+   backdrop-filter: blur(15px);
+   box-shadow: 0 5px 50px black;
+   border-radius: 15px;
+   margin-right: 50px;
+}
+
+.org__txt {
+    font-size: 18;
+    padding: 0 30px;
+    margin-bottom: 15px;
+    font-weight: 100;
     z-index: 30;
 }
 
-.photo__gallery {
-    position: relative;
-    height: 190px;
-    width: 1100px;
-    padding: 15px 15px;
-    backdrop-filter: blur(15px);
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    box-shadow: 0 5px 50px black;
-    /* overflow: hidden; */
-    border-radius: 15px;
-    z-index: 20;
-}
+/* ============FOOTER================= */
 
-.slider {
-    overflow: hidden;
-    width: 100%;
-}
 
-.gallery__text {
-    margin-bottom: 15px;
-    font-weight: 100;
-    text-align: center;
-}
-
-.gallery__photo {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    left: 0px;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    z-index: 10;
-
-    transition: all 1s;
-}
-
-.goods {
-    padding-right: 10px;
-}
-
-/* ==================BUTTONS================== */
-
-.buttons {
-    position: absolute;
-    margin-top: 60px;
-    height: 40px;
-    width: 1130px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 11;
-}
-
-.next,
-.prev {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    border-radius: 30px;
-    box-shadow: 1px 0px 30px;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-
-    transition: all 0.2s;
-
-    &:hover {
-        height: 45px;
-        width: 45px;
-    }
-}
-
-/* ==================FOOTER================== */
 .footer {
     position:fixed;
     bottom: 0;
