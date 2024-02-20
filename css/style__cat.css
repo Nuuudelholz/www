@@ -1,0 +1,284 @@
+
+
+body {
+    margin: 0;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    color: #ffffff;
+
+    background-image: url(../img/rd.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/* ==================HEADER================== */
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+    backdrop-filter: blur(50px);
+    z-index: 99;
+    box-shadow: 0 5px 50px black;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 237px;
+    height: 66px;
+}
+
+.logo__link {
+    text-decoration: none;
+    display: block;
+    width: 237px;
+    height: 66px;
+    background-image: url(../img/logo_white.png);
+
+    transition: all 0.2s linear;
+    &:hover {
+        background-image: url(../img/logo.png);
+    }
+}
+
+.nav__link {
+    margin-left: 25px;
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #dddddd;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+    &:hover,
+    &.active {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.adr__link {
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+        color: #dddddd;
+        text-decoration: underline;
+    }
+}
+
+.gps__logo,
+.social__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.adress {
+    display: flex;
+}
+
+.left__part {
+    text-align: right;
+}
+
+.phone {
+    padding-top: 10px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 54px;
+}
+
+.right__part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__link {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 7px;
+}
+
+.vk,
+.whatsup {
+    height: 25px;
+    width: 25px;
+}
+/* ==================INTRO================== */
+.intro {
+    height: 150px;
+}
+
+/* ===============CAT====================== */
+.catcontainer {
+    width: 1352px;
+    height: 1479px;
+    margin: 0px 270px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.catbackground {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: 22px 21px 15px 0px rgba(0, 0, 0, 0.58);
+    backdrop-filter: blur(10px);
+}
+
+.cattxt {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.catimg {
+    padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============FOOTER================= */
+
+
+.footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    backdrop-filter: blur(50px);
+    z-index: 99;
+    box-shadow: 0 5px 50px black;
+    font-size: 15px;
+}
+
+.footer__inner {
+    padding-top: 15px;
+}
+
+
+.footer__txt {
+    text-align: center;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.copywrite_left {
+    margin-right: 50px;
+}
+
+.footer__policy {
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #dddddd;
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+    &:hover,
+    &.active {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.wids {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+}
+
+.zchb,
+.LH {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.zchb {
+    background-image: url(../img/zchb.png);
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+}
+.LH {
+    background-image: url(../img/LH.gif);
+    width: 88px;
+    height: 31px;
+}
